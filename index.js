@@ -1,2 +1,8 @@
-var doc = document.getElementById("div1").childNodes
-console.log(doc)
+// var doc = document.getElementById("div1").childNodes
+// console.log(doc)
+
+function wordchecker() {
+    var input = document.getElementById("input").value;
+    var words = input.split(" ").reverse().join(" ");
+    console.log(words);
+}
