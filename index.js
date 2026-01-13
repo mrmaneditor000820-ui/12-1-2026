@@ -4,5 +4,7 @@
 function wordchecker() {
     var input = document.getElementById("input").value;
     var words = input.split(" ").reverse().join(" ");
+    document.getElementById("result").innerText = words;
     console.log(words);
+    
 }
