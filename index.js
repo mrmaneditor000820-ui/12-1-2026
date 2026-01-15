@@ -115,11 +115,15 @@ var paragraph = document.createElement('p')
 var paraText = document.createTextNode(input)
 paragraph.appendChild(paraText)
 listDiv.appendChild(paragraph)
-// if you want to appear last para on top
-// paraOnTop = listDiv.firstChild
-// listDiv.insertBefore(paragraph,paraOnTop)
+if (input===""){
+    alert("please enter some text")
+    listDiv.removeChild(paragraph)
+    return
+}
+paraOnTop = listDiv.firstChild
+listDiv.insertBefore(paragraph,paraOnTop)
 
-// listDiv.removeChild(paraOnTop)
+listDiv.removeChild(paraOnTop)
 
 
 
